@@ -67,50 +67,13 @@ The easiest way to run the app is using Docker. Make sure you have Docker instal
    http://0.0.0.0:8080/
    ```
 
-### Using Google Cloud
 
-To deploy the Docker container to Google Cloud Platform (GCP), follow these steps:
 
-1. Prerequisites:
-   - Have a Google account
-   - Create a project on Google Cloud Console
-   - Set up billing for your project (be aware of GCP's pricing structure)
-   - Install and set up Google Cloud SDK
-
-2. Verify and set your GCP project:
-   - Check the current project:
-     ```
-     gcloud config get-value project
-     ```
-   - Set a different project if needed:
-     ```
-     gcloud config set project YOUR_PROJECT_NAME
-     ```
-
-3. Deploy the application:
-   - Run the following command (uses the app.yaml file in your project):
-     ```
-     gcloud app deploy
-     ```
-   - Select the nearest server location when prompted
-   - Wait for the deployment process to complete
-
-4. Access your web app:
-   - After deployment, you'll receive a URL for your app
-   - The URL format will be: https://YOUR_PROJECT_NAME.REGION.r.appspot.com/
-   - You can also find this URL in the Google Cloud Console
-
-Note: Ensure you understand GCP's pricing before deploying to avoid unexpected charges.
 
 ## Streamlit Web App Demonstrations
 
 ### Black-Scholes Model
-![black-scholes-demo](media/Black_Scholes_Model.gif)
+![black-scholes-demo](media/bs.png)
 
-### Monte Carlo Option Pricing
-![monte-carlo-demo](media/Monte_Carlo_Option_Pricing.gif)
-
-### Binomial Model
-![binomial-tree-demo](media/Binomial_Model.gif)
 
 By following these instructions, you can easily set up and explore the option pricing models using the Streamlit web app. Feel free to experiment with different parameters and see how they affect the calculated option prices.
